@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Http.HttpResults;
 using Tutorial4.Database;
-using Tutorial4.Endpoints;
 using Tutorial4.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,9 +21,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-// Minimal API
-app.MapAnimalsEndpoints();
 
 // Controllers
 app.MapControllers();

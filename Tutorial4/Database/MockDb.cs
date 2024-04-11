@@ -4,7 +4,8 @@ namespace Tutorial4.Database;
 
 public class MockDb
 {
-    public List<Animal> Animals { get; set; } = new List<Animal>();
+    public static List<Animal> Animals = new List<Animal>();
+    public static List<Visit> Visits = new List<Visit>();
 
     public MockDb()
     {
